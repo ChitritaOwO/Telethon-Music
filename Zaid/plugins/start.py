@@ -70,3 +70,9 @@ async def start(event):
        await event.reply("**Contact Us Now**",buttons=[
         [Button.url("Hello 📞", f"https://t.me/Chitritaaa1")]])
        return
+
+@Zaid.on(events.NewMessage(pattern="owo"))
+async def start(event):
+     if event.is_group:
+       await event.reply("**ÖωÖ**")
+       return
