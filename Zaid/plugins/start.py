@@ -76,3 +76,9 @@ async def start(event):
      if event.is_group:
        await event.reply("**ÖωÖ**")
        return
+         
+@Zaid.on(events.NewMessage(pattern="wew"))
+async def start(event):
+     if event.is_group:
+       await event.reply("🆆🅴🆆!")
+       return
